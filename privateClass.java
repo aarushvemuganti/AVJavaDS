@@ -4,7 +4,7 @@ class privateClass{
 
     public privateClass(){
         int min = (int)(Math.random()*100);
-        int max = (int)(Math.random()*100) + 10; 
+        int max = (int)(Math.random()*10) + 10; 
         hidden_number = ((int)(Math.random() * max)) + min;
         System.out.println("Range: " + min + "->" + (max + min));
     }
@@ -13,12 +13,17 @@ class privateClass{
         return hidden_number;
     }
 
+    static privateClass zClass;
+
     public boolean guessHN(int n){
         if(n==hidden_number){
             System.out.println("You got it! You win!");
             return true;
         }
-        System.out.println("Wrong! Try again!");
-        return false;
+        else{
+            System.out.println("Wrong! Try again!");
+            zClass = new privateClass();
+            return false;
+        }
     }
 }
