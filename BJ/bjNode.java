@@ -1,4 +1,4 @@
-package structures;
+package BJ;
 
 public class node {
     Object data;
