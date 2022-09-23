@@ -1,4 +1,6 @@
 package structures;
+import java.util.Queue;
+import java.util.LinkedList;
 
 class Queue {
     node head;

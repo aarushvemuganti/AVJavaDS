@@ -1,5 +1,8 @@
 package structures;
 
+import java.util.LinkedList;
+
+
 public class linkedList {
     node head;
 
